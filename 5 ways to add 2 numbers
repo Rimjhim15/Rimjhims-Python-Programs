@@ -1,0 +1,46 @@
+# add two numbers
+num1=15
+num2=12
+sum= num1 +num2
+print("The sum of", num1, "and", num2,"is",sum)
+
+
+# adding two numbers using user input
+num1=input("Enter first number:")
+num2=input("Enter second number:")
+sum=float(num1) + float(num2)
+print("The sum of", num1, "and", num2,"is",sum)
+
+
+# adding two numbers using function
+def add(a,b):
+  return a+b
+#initializing variables
+num1=10
+num2=14
+sum=add(num1,num2)
+print("The sum of", num1, "and", num2,"is",sum)
+
+#Adding two numbers using operator.add() method
+import operator
+num1=15
+num2=12
+sum=operator.add(num1, num2)
+print("The sum of", num1, "and", num2,"is",sum)
+
+
+#Adding two numbers using recursive function
+def add_nums(x,y):
+  if y==0:
+    return x
+  else:
+    return add_nums(x+1, y-1)
+num1=5
+num2=10
+sum=add_nums(num1, num2)
+print("The sum of", num1, "and", num2,"is",sum)
+    
+
+
+
+  
